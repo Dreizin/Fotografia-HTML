@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+
+    <style>
+        *{
+            font-family: 'Roboto', sans-serif;
+        }
+        html{
+            height: 350vh;
+        }
+        .container{ /*pai 2*/
+            max-width: 1280px;
+            margin: auto;
+        }
+        .flex{ /*logos, nome e RA*/
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            text-align: center;
+        }
+        .lista-nao-ordenada{ /*li - botoes home, imagens, links, fale..*/
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header{ /*pai 1*/
+            width: 100%;
+            height: 100px; 
+            position: absolute;
+            padding: 10px 0%;
+            top: 0;
+            left: 0;
+        
+        }
+        header ul{
+            list-style-type: none;
+        }
+        header ul li{ /*alinhar e distanciar intens header*/
+            display: inline-block;
+            margin: 0 120px;
+        }
+        header ul li a{ 
+            color: white;
+            text-decoration: none;
+        }
+        .btn-contato button{ /*fale conosco*/
+            width: 140px;
+            height: 40px;
+            border: none;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #ba8a5e;
+            color: #fff;
+            transition: .2s;
+        }
+        
+        .banner{ /*background e texto central (banner)*/
+            background-image: url(Imagens/Fundo.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            padding-right: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8em;
+
+
+        }
+        .title { /*banner preto*/
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            font-weight: bold;
+        }
+        
+        .title span { /*banner laranja*/
+            color: rgb(255, 101, 46);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+            text-decoration: none;
+        
+        }
+        body{
+            background-image: url(Imagens/continuacao.png);
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #b77c46;
+        }
+        .isogeral{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .iso{
+            margin-right: 50px;
+            margin-left: 20px;
+            color: white;
+            font-size: 1.5em;
+            text-align: justify;
+            
+        }
+        .isoimg img{
+            height: 350px;
+            margin-right: 20px;
+            border-radius: 30px;
+        }
+        .quebra1 {
+            border-bottom: 2px solid white;
+            margin: 50px 50px;
+        }
+        .aberturageral{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .abertura{
+            margin-right: 50px;
+            margin-left: 20px;
+            color: white;
+            font-size: 1.5em;
+            text-align: justify;
+        }
+        .aberturaimg img{
+            height: 450px;
+            margin-right: 20px;
+            border-radius: 30px;
+        }
+        .velocidadegeral{
+            justify-content: space-between;
+            align-items: center;
+        }
+        .velocidade{
+            margin-right: 50px;
+            margin-left: 20px;
+            color: white;
+            font-size: 1.5em;
+            text-align: justify;
+        }
+        .velocidadeimg {
+            display: flex;
+            justify-content: space-around;            
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        .velocidadeimg1 img{
+            border-radius: 30px;
+            height: 340px;
+
+        }
+        .velocidadeimg2 img{
+            border-radius: 30px;
+            height: 340px;
+        }
+        .listaordenada{
+            margin: 20px;
+            height: 30vh;
+            width: 60vh;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            font-size: 1.5rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 30px;
+        }
+        .listaordenada a{
+            color: white;
+        }
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(0, 0, 0);
+            font-size: 1.0rem;
+            margin: 20px;
+        }
+        caption {
+            padding: 10px;
+            font-weight: bold;
+            color: white;
+            font-size: 1.5rem;
+        }
+        thead {
+            background-color: black;
+            color: white;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 15px 10px;
+        }
+        td:last-of-type {
+            text-align: center;
+        }
+        tbody {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+        .lista-tabela{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        </style>
+
+</head>
+<body>
+    <header id="header">    
+        <div class="container">
+
+            <div class="flex">
+
+                <a href="index.html">
+                    <img src="Imagens/DZNbranco.png" width="150" height="150">
+                </a>
+
+                <div class="dados">
+                    <h2>RA: 1190660</h2>
+                    <h1>Andrei Martins Scaldelai</h1>
+                </div>
+                
+
+                <a href="https://www.uniube.br" target="_blank">
+                    <img src="Imagens\LOGO.png" width="200" height="50">
+                </a>
+
+            </div>
+
+            <div class="lista-nao-ordenada">
+                
+                <nav>
+                    <ul>
+                        <li> <a href="index.html">HOME</a> </li>
+    
+                        <li> <a href="imagens.html">IMAGENS</a> </li>
+    
+                        <li> <a href="links.html">LINKS</a> </li>
+                    </ul>
+                </nav>
+    
+                <div class="btn-contato">
+                    <a href="fale_conosco.html"><button>FALE CONOSCO</button>
+                </div></a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <section class="banner">
+        <h1 class="title">APRENDA COMO UMA <span>CÂMERA FUNCIONA</span></h1>
+    </section>
+
+    <div class="isogeral" id="ISO">
+
+        <div class="iso">
+            <p>
+                <h1>O que é ISO?</h1>
+                <h2>Definido pela International Organization for Standardization (ISO), se trata de uma configuração artificial de iluminação. Dessa forma, quanto menor o número de ISO menor a luminosidade da foto, e o contrário para um número maior de ISO. Contudo, por se tratar de um ganho de luz dado artificialmente, em grandes números é gerado o famoso ruído, que acaba não sendo interessante para as fotos. O range de ISO varia de acordo com a câmera, mas normalmente se encontra de 100 a 3200.</h2>
+            </p>
+    
+        </div>
+    
+        <div class="isoimg">
+            <a href="https://fotografiaprofissional.org/iso-o-que-e/" target="_blank">
+                <img src="Imagens/ISO.png" class="img">
+            </a>
+        </div>
+    </div>
+
+    <div class="quebra1"></div>
+
+    <div class="aberturageral" id="ABERTURA">
+        <div class="abertura">
+            <h1>O que é abertura?</h1>
+            <h2>A abertura de uma lente corresponde a quanto o diafragma ou "íris" consegue abrir. Assim, quanto maior a abertura, representada por menor número "FX.X" mais quantidade de luz chegará até o sensor da câmera. Com uma câmera com grande abertura como F1.4 a F2.8, além de obter fotos claras, também é perceptível que o segundo plano estará desfocado.</h2>
+        </div>
+        <div class="aberturaimg">
+            <a href="https://foto.espm.br/fundamentos-da-fotografiadiafragma/" target="_blank">
+                <img src="Imagens/abertura.png" class="img">
+            </a>
+        </div>
+    </div>
+
+    <div class="quebra1"></div>
+
+    <div class="velocidadegeral" id="VELOCIDADE">
+        <div class="velocidade">
+            <h1>O que é velocidade do obturador?</h1>
+            <h2>A velocidade do obturador se trata da terceira definção que determina a exposição. Para registrar uma foto, o obturador da câmera abre e fecha, e ao final do ciclo a foto é gerada. Contudo, para cada ciclo leva um tempo - onde entra a velocidade do obturador. Quanto mais tempo aberto, mais luz é captada, e o contrário caso fique menor tempo aberto. Dessa forma é possivel fazer esse ajuste de velocidade em geral de 30s a 1/1000s, congelando um contexto ou criando um efeito de rastro a depender da configuração. </h2>
+        </div>
+        <div class="velocidadeimg">
+            <div class="velocidadeimg1">
+                <a href="https://www.canon.pt/get-inspired/tips-and-techniques/how-to-use-shutter-speed/" target="_blank">
+                    <img src="Imagens/velocidade.png" class="img">
+                </a>
+            </div>  
+
+            <div class="velocidadeimg2">
+                <a href="https://clicandoeandando.com/velocidade-do-obturador/" target="_blank" >
+                    <img src="Imagens/velocidade2.png">
+                </a>
+                
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div class="quebra1"></div>
+
+    <div class="lista-tabela">
+
+        <div class="listaordenada">
+            <h1>Tópicos Abordados:</h1>
+            <ol>
+                <li> <a href="#ISO">O que é ISO?</a></li>
+                <li> <a href="#ABERTURA">O que é abertura?</a></li>
+                <li> <a href="#VELOCIDADE">O que é velocidade do obturador?
+                </a></li>
+            </ol>
+        </div>
+    
+        <div class="tabela">
+            <table>
+                <caption>Tópicos Abordados</caption>
+                <thead>
+                    <th scope="col">Tópicos</th>
+                    <th scope="col">Introdução</th>
+                    <th scope="col">Redirecionamento</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">O que é ISO?</th>
+                        <td>Configuração artificial de iluminação</td>
+                        <td><a href="#ISO">Aqui</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">O que é abertura?</th>
+                        <td>Quantidade de abertura do diafragma</td>
+                        <td><a href="#ABERTURA">Aqui</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">O que é velocidade do obturador?</th>
+                        <td>Velocidade em que a foto é captada</td>
+                        <td><a href="#VELOCIDADE">Aqui</a></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    
+
+</body>
+
+</html>

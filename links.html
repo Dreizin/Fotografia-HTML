@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <style>
+        *{
+            font-family: 'Roboto', sans-serif;
+        }
+        html{
+            height: 140vh;
+        }
+        .container{ /*pai 2*/
+            max-width: 1280px;
+            margin: auto;
+        }
+        .flex{ /*logos, nome e RA*/
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            text-align: center;
+        }
+        .lista-nao-ordenada{ /*li - botoes home, imagens, links, fale..*/
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header{ /*pai 1*/
+            width: 100%;
+            height: 100px; 
+            position: absolute;
+            padding: 10px 0%;
+            top: 0;
+            left: 0;
+        
+        }
+        header ul{
+            list-style-type: none;
+        }
+        header ul li{ /*alinhar e distanciar intens header*/
+            display: inline-block;
+            margin: 0 120px;
+        }
+        header ul li a{ 
+            color: white;
+            text-decoration: none;
+        }
+        .btn-contato button{ /*fale conosco*/
+            width: 140px;
+            height: 40px;
+            border: none;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #ba8a5e;
+            color: #fff;
+            transition: .2s;
+        }
+        body{
+            background-image: url(Imagens/continuacao.png);
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #b77c46;
+        }
+        .linksall {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 300px;            
+        }
+        .link1{
+            height: 280px;
+            width: 60%;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+            gap: 50px;
+            
+        }
+        .textolink1{
+            color: white;
+        }
+        .containerimg1{
+            background-image: url(Imagens/links1.png);
+            height: 150px;
+            width: 300px;
+            background-size: cover;
+            border-radius: 30px;
+            margin-left: 30px;
+        }
+        .link2{
+            height: 280px;
+            width: 60%;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+            gap: 50px;
+            margin: 50px;
+        }
+        .textolink2{
+            color: white;
+        }
+        .containerimg2{
+            background-image: url(Imagens/links2.png);
+            height: 150px;
+            width: 300px;
+            background-size: cover;
+            border-radius: 30px;
+            margin-left: 30px;
+        }
+        .link3{
+            height: 280px;
+            width: 60%;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+            gap: 50px;
+        }
+        .textolink3{
+            color: white;
+        }
+        .containerimg3{
+            background-image: url(Imagens/links3.png);
+            height: 150px;
+            width: 300px;
+            background-size: cover;
+            border-radius: 30px;
+            margin-left: 30px;
+        }
+        </style>
+
+</head>
+<body>
+    <header id="header">    
+        <div class="container">
+
+            <div class="flex">
+
+                <a href="index.html">
+                    <img src="Imagens/DZNbranco.png" width="150" height="150">
+                </a>
+
+                <div class="dados">
+                    <h2>RA: 1190660</h2>
+                    <h1>Andrei Martins Scaldelai</h1>
+                </div>
+                
+
+                <a href="https://www.uniube.br" target="_blank">
+                    <img src="Imagens\LOGO.png" width="200" height="50">
+                </a>
+
+            </div>
+
+            <div class="lista-nao-ordenada">
+                
+                <nav>
+                    <ul>
+                        <li> <a href="index.html">HOME</a> </li>
+    
+                        <li> <a href="imagens.html">IMAGENS</a> </li>
+    
+                        <li> <a href="links.html">LINKS</a> </li>
+                    </ul>
+                </nav>
+    
+                <div class="btn-contato">
+                    <a href="fale_conosco.html"><button>FALE CONOSCO</button>
+                </div></a>
+
+            </div>
+
+        </div>
+    </header>
+
+        <div class="linksall">
+
+            <a class="link1" href="https://www.adobe.com/br/creativecloud/photography/discover/iso.html" target="_blank">
+                
+                <div class="containerimg1"></div>
+
+                <div class="textolink1">
+                    <p><h1>Saiba o que é ISO na fotografia e como usá-la.</h1></p>
+                    <p><h2>Explore como essa configuração de câmera ajusta a sensibilidade à luz para ajudar a alcançar a exposição desejada.</h2></p>
+                    <p><h2 style="text-decoration: underline; color: rgb(72, 72, 221);">https://www.adobe.com/br/creativecloud/photography/discover/iso.html</h2></p>
+                </div>
+                
+            </a>
+
+            <a class="link2" href="https://tecnoblog.net/responde/quanto-maior-a-abertura-da-lente-da-camera-melhor-ela-e/" target="_blank">
+                
+                <div class="containerimg2"></div>
+
+                <div class="textolink2">
+                    <p><h1>O que é abertura de lente? Saiba como ela afeta as fotos da câmera</h1></p>
+                    <p><h2>Abertura determina a quantidade de luz que passa pelo diafragma da lente; descubra o que são os números f/stop e como eles afetam as suas fotos</h2></p>
+                    <p><h2 style="text-decoration: underline; color: rgb(72, 72, 221);">https://tecnoblog.net/responde/quanto-maior-a-abertura-da-lente-da-camera-melhor-ela-e/</h2></p>
+                </div>
+                
+            </a>
+
+            <a class="link3" href="https://tecnoblog.net/responde/o-que-e-velocidade-do-obturador/" target="_blank">
+                
+                <div class="containerimg3"></div>
+
+                <div class="textolink3">
+                    <p><h1>O que é velocidade do obturador? Descubra o ajuste ideal para sua câmera</h1></p>
+                    <p><h2>Velocidade do obturador determina o tempo de exposição de um sensor à luz; entenda quais ajustes são ideais para cada tipo de fotografia</h2></p>
+                    <p><h2 style="text-decoration: underline; color: rgb(72, 72, 221);">https://tecnoblog.net/responde/o-que-e-velocidade-do-obturador</h2></p>
+                </div>
+                
+            </a>
+
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale conosco</title>
+
+    <style>
+        *{
+            font-family: 'Roboto', sans-serif;
+        }
+        html{
+            height: 100vh;
+        }
+        .container{ /*pai 2*/
+            max-width: 1280px;
+            margin: auto;
+        }
+        .flex{ /*logos, nome e RA*/
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            text-align: center;
+        }
+        .lista-nao-ordenada{ /*li - botoes home, imagens, links, fale..*/
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header{ /*pai 1*/
+            width: 100%;
+            height: 100px; 
+            position: absolute;
+            padding: 10px 0%;
+            top: 0;
+            left: 0;
+        
+        }
+        header ul{
+            list-style-type: none;
+        }
+        header ul li{ /*alinhar e distanciar intens header*/
+            display: inline-block;
+            margin: 0 120px;
+        }
+        header ul li a{ 
+            color: white;
+            text-decoration: none;
+        }
+        .btn-contato button{ /*fale conosco*/
+            width: 140px;
+            height: 40px;
+            border: none;
+            border-radius:20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #ba8a5e;
+            color: #fff;
+            transition: .2s;
+        }
+        body{
+            background-image: url(Imagens/continuacao.png);
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #b77c46;
+        }
+        .formulario {
+            margin: 250px 650px;
+            height: 65vh;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            font-size: 1.5rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 30px;
+
+        }
+        .ins-nome{
+            border-radius: 20px;
+            height: 30px;
+            width: 250px;
+        }
+        .ins-motivo{
+            border-radius: 20px;
+            height: 30px;
+        }
+        .ins-mensagem {
+            border-radius: 20px;
+            height: 85px;
+        }
+        .bot-enviar{
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 20px; 
+            background-color: #4CAF50; 
+            color: white;
+            cursor: pointer;
+        }
+        .bot-enviar:hover{
+            background-color: #29542b;
+        }
+        </style>
+
+</head>
+<body>
+    <header id="header">    
+        <div class="container">
+
+            <div class="flex">
+
+                <a href="index.html">
+                    <img src="Imagens/DZNbranco.png" width="150" height="150">
+                </a>
+
+                <div class="dados">
+                    <h2>RA: 1190660</h2>
+                    <h1>Andrei Martins Scaldelai</h1>
+                </div>
+                
+
+                <a href="https://www.uniube.br" target="_blank">
+                    <img src="Imagens\LOGO.png" width="200" height="50">
+                </a>
+
+            </div>
+
+            <div class="lista-nao-ordenada">
+                
+                <nav>
+                    <ul>
+                        <li> <a href="index.html">HOME</a> </li>
+    
+                        <li> <a href="imagens.html">IMAGENS</a> </li>
+    
+                        <li> <a href="links.html">LINKS</a> </li>
+                    </ul>
+                </nav>
+    
+                <div class="btn-contato">
+                    <a href="fale_conosco.html"><button>FALE CONOSCO</button>
+                </div></a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <div class="formulario">
+
+        <div class="titulo">
+            <h1>Fale conosco!</h1>
+        </div>
+            
+        <div class="nome">
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" class="ins-nome" required><br><br>
+        </div>
+    
+        <div class="radio">
+            <label>Como você nos encontrou?</label><br>
+    
+            <input type="radio" id="google" name="encontrou" value="google">
+            <label for="google">Google</label><br>
+    
+            <input type="radio" id="instagram" name="encontrou" value="instagram">
+            <label for="instagram">Instagram</label><br>
+    
+            <input type="radio" id="uniube" name="encontrou" value="uniube">
+            <label for="uniube">Uniube</label><br>
+    
+            <input type="radio" id="outro" name="encontrou" value="outro">
+            <label for="outro">Outro</label><br><br>
+        </div>
+    
+        <div class="motivo">
+            <label for="motivo">Motivo do Contato:</label>
+            <select id="motivo" name="motivo" class="ins-motivo">
+                <option value="elogio">Elogio</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="reclamacao">Reclamação</option>
+                <option value="avaliar">Avaliar e dar nota 10</option>
+                <option value="outro">Outro</option>
+            </select><br><br>
+        </div>
+    
+        <div class="mensagem">
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" class="ins-mensagem" rows="4" cols="50" required></textarea><br><br>
+    
+            <input type="submit" value="Enviar" class="bot-enviar">
+        </div>
+
+    </div>
+
+    </form>
+
+</body>
+
+</html>
